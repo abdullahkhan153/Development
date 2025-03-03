@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Styles */
+
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+     background: #2c3e50;
+}
+
+.logo-container {
+    grid-column: 1;
+    margin-right: 1rem;
+}
+
+.nav-logo {
+    height: 120px;
+    width: auto;
+}
+.nav-links {
+    grid-column: 2;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    justify-self: center;
+}
+ .nav-links a {
+    text-decoration: none;
+     color: #ecf0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Main Section */
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 5%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    gap: 2rem;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main-logo {
+    display: grid;
+    place-items: center;
+}
+
+.logo-image {
+    width: 800px;
+    height: 800px;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 5rem 5%;
+    background: #f8f9fa;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.image-grid {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-grid:hover img {
+    transform: scale(1.05);
+}
+
+.content{
+    padding-left: 2rem;
+}
+
+.section-main-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.stats-section {
+    margin-top: 2rem;
+}
+
+.stats-card {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 1.5rem 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stats-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stats-card p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 5rem 5%;
+    background: #fff;
+
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+ background-color: greenyellow;
+}
+
+/* Services Section Styles*/
+.services {
+    padding: 4rem 5%;
+    background: #f8f9fa;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    min-height: 200px;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.05);
+}
+
+.service-content {
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-content h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.service-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 4rem 5%;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+}
+.footer-section h3{
+font-size: 1.9rem;
+}
+.footer-section a:hover{
+ color: greenyellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
